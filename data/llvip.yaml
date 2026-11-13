@@ -1,0 +1,13 @@
+# InfraNet-IR (C): FIRST IR, SECOND RGB; train_rgb is a legacy name for secondary.
+# Example only. Verify dataset split, class IDs and pixel alignment.
+path: datasets/llvip
+train: ir/train/images
+train_rgb: rgb/train/images
+val: ir/val/images
+val_rgb: rgb/val/images
+nc: 1
+names:
+- person
+modality_order:
+- ir
+- rgb
